@@ -19,9 +19,26 @@ public class ImageSearchUtil {
                 img=ImageIO.read(f);
 
             }
+            catch (IOException e ){System.out.println(e);
+            }
+
+            int width =img.getWidth();
+            int height=img.getHeight();
+
+            //just using a single grid value
+            //an algorithm will be used later 
+            //to traverese thru the whole image 
+            //depending on how the pixles are 
+            //compared to the next image 
+            int p=img.getRGB(0,0);
+            
+
+
+
+
          
 
 }
-//Evan add your method here 
+    // Evan add your method here
 
-    }
+}
